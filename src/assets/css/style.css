@@ -14,3 +14,8 @@ li.nav-item-sub {
 .content-margin-top {
     margin-top: 62px;
 }
+
+.container-fluid {
+    padding-right: 50px !important;
+    padding-left: 50px !important;
+}

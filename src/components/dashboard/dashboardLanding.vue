@@ -152,5 +152,6 @@ export default {
     border: 1px solid #d8d8d8;
     margin: 0 15px;
     border-radius: 5px;
+    background: white;
 }
 </style>
