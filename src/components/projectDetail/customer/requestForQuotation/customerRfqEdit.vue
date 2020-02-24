@@ -9,26 +9,26 @@
                                 <tr>
                                     <th scope="col">No</th>
                                     <th scope="col">Description</th>
-                                    <th scope="col">Part No</th>
-                                    <th scope="col">Model No</th>
-                                    <th scope="col">Serial No</th>
-                                    <th scope="col">Drawing No</th>
-                                    <th scope="col">Item No</th>
-                                    <th scope="col">Qty</th>
-                                    <th scope="col">Option</th>
+                                    <th scope="col" class="text-center">Part No</th>
+                                    <th scope="col" class="text-center">Model No</th>
+                                    <th scope="col" class="text-center">Serial No</th>
+                                    <th scope="col" class="text-center">Drawing No</th>
+                                    <th scope="col" class="text-center">Item No</th>
+                                    <th scope="col" class="text-center">Qty</th>
+                                    <th scope="col" class="text-center">Option</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr v-for="(item, index) in custRfqList" :key="index++">
                                     <td scope="row">{{ index }}</td>
                                     <td v-html="item.description"></td>
-                                    <td v-html="item.part"></td>
-                                    <td v-html="item.model"></td>
-                                    <td v-html="item.serial"></td>
-                                    <td v-html="item.drawing"></td>
-                                    <td v-html="item.item"></td>
-                                    <td v-html="item.quantity"></td>
-                                    <td>delete</td>
+                                    <td class="text-center" v-html="item.part"></td>
+                                    <td class="text-center" v-html="item.model"></td>
+                                    <td class="text-center" v-html="item.serial"></td>
+                                    <td class="text-center" v-html="item.drawing"></td>
+                                    <td class="text-center" v-html="item.item"></td>
+                                    <td class="text-center" v-html="item.quantity"></td>
+                                    <td class="text-center"><router-link to="crfq" class="text-danger">Delete</router-link></td>
                                 </tr>
                             </tbody>
                         </table>

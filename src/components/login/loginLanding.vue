@@ -58,7 +58,7 @@
               </div>-->
 
               <div class="col-md-6 offset-md-4">
-                <button type="button" class="btn btn-primary" @click="onLogin">Login</button>
+                <button type="button" class="btn btn-primary pl-5 pr-5" @click="onLogin">Login</button>
                 <!-- <a href="#" class="btn btn-link">Forgot Your Password?</a> -->
               </div>
             </form>
@@ -160,7 +160,8 @@ body {
 .login-form {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-  background: url("../../assets/img/turbine.jpg");
+  background: url("../../assets/img/slide1.jpg");
+  background-size: cover;
   height: calc(100vh - 118px);
   position: relative;
 }

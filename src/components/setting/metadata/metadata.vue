@@ -11,7 +11,9 @@
     </div>
 
     <div class="container-fluid" style="margin-bottom: 60px;">
-      <div class="row">
+      <div class="card">
+        <div class="card-body">
+      
         <table class="table">
           <thead class="thead-dark">
             <tr>
@@ -42,9 +44,8 @@
             </tr>
           </tbody>
         </table>
-      </div>
-      <div class="row">
-        <nav aria-label="..." style="margin: auto;">
+
+        <nav aria-label="..." style="margin: auto;" v-show="false">
           <ul class="pagination">
             <li class="page-item disabled">
               <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
@@ -66,7 +67,10 @@
             </li>
           </ul>
         </nav>
+
+        </div>
       </div>
+        
     </div>
 
     <!--metadata View-->
@@ -83,7 +87,7 @@
             >Close</button>
           </h5>
           <div class="card-body mhCardBody">
-            <table class="table">
+            <table class="table metaViewTable">
               <tbody>
                 <tr>
                   <th scope="row">Revision</th>
@@ -182,4 +186,13 @@ export default {
   width: 100%;
   background: white;
 }
+.metaViewTable td{
+  border: 0 !important;
+}
+.metaViewTable th{
+  border: 0 !important;
+  width: 100px;
+}
+
+
 </style>

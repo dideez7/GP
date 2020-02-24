@@ -1,7 +1,6 @@
 <template>
     <div id="piSupplierDoView">
-        <div class="    <div class="container-fluid">
-" style="margin-bottom: 60px;margin-top: 30px;">
+        <div class="container-fluid" style="margin-bottom: 60px;margin-top: 30px;">
             <div class="card mb-3">
                 <div class="card-body">
                     <div class="d-flex flex-row">

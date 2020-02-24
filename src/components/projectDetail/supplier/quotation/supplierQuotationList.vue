@@ -23,7 +23,11 @@
                             </tr>
                         </tbody>
                     </table>
-                    <button class="btn btn-primary" style="float: right;" type="submit">Add New Quotation</button>
+                
+                <button class="btn btn-primary" style="float: right;" type="submit">Edit</button>
+                <button class="btn btn-primary mr-3" style="float: right;" type="button">Add New</button>
+                <button class="btn btn-info mr-3" style="float: right;" type="button">Generate</button>
+                
                 </div>
             </div>
         </div>

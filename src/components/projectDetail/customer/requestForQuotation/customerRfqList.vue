@@ -9,32 +9,30 @@
                         <tr>
                             <th scope="col">No</th>
                             <th scope="col">Description</th>
-                            <th scope="col">Part Number</th>
-                            <th scope="col">Model Number</th>
-                            <th scope="col">Serial Number</th>
-                            <th scope="col">Drawing Number</th>
-                            <th scope="col">Item Number</th>
-                            <th scope="col">Quantity</th>
-                            <th scope="col">Option</th>
+                            <th scope="col" class="text-center">Part Number</th>
+                            <th scope="col" class="text-center">Model Number</th>
+                            <th scope="col" class="text-center">Serial Number</th>
+                            <th scope="col" class="text-center">Drawing Number</th>
+                            <th scope="col" class="text-center">Item Number</th>
+                            <th scope="col" class="text-center">Quantity</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr v-for="(item, index) in projectRFQ.items" :key="index++">
                         <td scope="row">{{ index }}</td>
                         <td>{{ item.partName }}</td>
-                        <td>{{ item.partNumber }}</td>
-                        <td>{{ item.modelNumber }}</td>
-                        <td>{{ item.serialNumber }}</td>
-                        <td>{{ item.drawingNumber }}</td>
-                        <td>{{ item.tagNumber }}</td>
-                        <td>{{ item.quantity }}</td>
-                        <td class="text-center"><router-link to="crfq/view/" class="nav-link">View RFQ</router-link></td>
+                        <td class="text-center">{{ item.partNumber }}</td>
+                        <td class="text-center">{{ item.modelNumber }}</td>
+                        <td class="text-center">{{ item.serialNumber }}</td>
+                        <td class="text-center">{{ item.drawingNumber }}</td>
+                        <td class="text-center">{{ item.tagNumber }}</td>
+                        <td class="text-center">{{ item.quantity }}</td>
                             </tr>
                     </tbody>
                 </table>
-                
-                <button class="btn btn-success" style="float: right;" type="button">Add</button>
-                <button class="btn btn-primary" style="float: right;" type="submit">Edit Request Item</button>
+                <router-link tag="button" :to="'crfq/edit'" class="btn btn-primary" style="float: right;" >Edit</router-link>
+                <router-link tag="button" :to="'crfq/add'" class="btn btn-primary" style="float: right;" >Add New</router-link>
+                <button class="btn btn-info mr-3" style="float: right;" type="button">Generate</button>
 
                 </div>
             </div>

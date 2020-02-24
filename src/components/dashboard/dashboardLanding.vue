@@ -18,6 +18,71 @@
     </div>
 
     <div class="container-fluid" style="margin-bottom: 60px;">
+
+          <div class="row mb-4">
+              <div class="col currency">
+                <div class="left">
+                  <img class="flag" src="../../assets/img/currency/usd.svg">
+                </div>
+                <div class="right">
+                  <div class="title">USD</div>
+                  <div class="sub">4.50001</div>
+                </div>
+              </div>
+
+              <div class="col currency">
+                <div class="left">
+                  <img class="flag" src="../../assets/img/currency/myr.svg">
+                </div>
+                <div class="right">
+                  <div class="title">MYR</div>
+                  <div class="sub">4.50001</div>
+                </div>
+              </div>
+
+              <div class="col currency">
+                <div class="left">
+                  <img class="flag" src="../../assets/img/currency/sgd.svg">
+                </div>
+                <div class="right">
+                  <div class="title">SGD</div>
+                  <div class="sub">4.50001</div>
+                </div>
+              </div>
+
+              <div class="col currency">
+                <div class="left">
+                  <img class="flag" src="../../assets/img/currency/jpy.svg">
+                </div>
+                <div class="right">
+                  <div class="title">JPY</div>
+                  <div class="sub">4.50001</div>
+                </div>
+              </div>
+
+              <div class="col currency">
+                <div class="left">
+                  <img class="flag" src="../../assets/img/currency/aud.svg">
+                </div>
+                <div class="right">
+                  <div class="title">AUD</div>
+                  <div class="sub">4.50001</div>
+                </div>
+              </div>
+
+              <div class="col currency">
+                <div class="left">
+                  <img class="flag" src="../../assets/img/currency/eur.svg">
+                </div>
+                <div class="right">
+                  <div class="title">EUR</div>
+                  <div class="sub">4.50001</div>
+                </div>
+              </div>
+
+            </div>
+      
+
       <div class="row">
         <div class="col-lg-9">
           <!--project status-->
@@ -69,4 +134,23 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.currency img.flag {
+    width: 40px;
+}
+
+.currency .title {
+    font-weight: bold;
+    color: #3F51B5;
+    font-size: 1.2em;
+}
+.currency .left {
+    float: left;
+    padding: 8px;
+}
+.currency {
+    border: 1px solid #d8d8d8;
+    margin: 0 15px;
+    border-radius: 5px;
+}
+</style>

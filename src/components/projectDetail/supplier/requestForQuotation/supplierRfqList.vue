@@ -9,53 +9,34 @@
                         <tr>
                             <th scope="col">No</th>
                             <th scope="col">Description</th>
-                            <th scope="col">Part Number</th>
-                            <th scope="col">Model Number</th>
-                            <th scope="col">Serial Number</th>
-                            <th scope="col">Drawing Number</th>
-                            <th scope="col">Item Number</th>
-                            <th scope="col">Quantity</th>
+                            <th scope="col" class="text-center">Part Number</th>
+                            <th scope="col" class="text-center">Model Number</th>
+                            <th scope="col" class="text-center">Serial Number</th>
+                            <th scope="col" class="text-center">Drawing Number</th>
+                            <th scope="col" class="text-center">Item Number</th>
+                            <th scope="col" class="text-center">Quantity</th>
+                            <th scope="col" class="text-center">Option</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr v-for="(item, index) in projectRFQ.items" :key="index++">
                         <td scope="row">{{ index }}</td>
                         <td>{{ item.partName }}</td>
-                        <td>{{ item.partNumber }}</td>
-                        <td>{{ item.modelNumber }}</td>
-                        <td>{{ item.serialNumber }}</td>
-                        <td>{{ item.drawingNumber }}</td>
-                        <td>{{ item.tagNumber }}</td>
-                        <td>{{ item.quantity }}</td>
+                        <td class="text-center">{{ item.partNumber }}</td>
+                        <td class="text-center">{{ item.modelNumber }}</td>
+                        <td class="text-center">{{ item.serialNumber }}</td>
+                        <td class="text-center">{{ item.drawingNumber }}</td>
+                        <td class="text-center">{{ item.tagNumber }}</td>
+                        <td class="text-center">{{ item.quantity }}</td>
+                        <td class="text-center"><a href="#" class="text-danger">Delete</a></td>
                         </tr>
                     </tbody>
                 </table>
                 
-                <button class="btn btn-success" style="float: right;" type="button">Add</button>
-                <button class="btn btn-primary" style="float: right;" type="submit">Edit Request Item</button>
-                        <table class="table">
-                            <thead class="thead-dark">
-                                <tr>
-                                <th scope="col">No</th>
-                                <th scope="col">Date</th>
-                                <th scope="col">Supplier</th>
-                                <th scope="col">Status</th>
-                                <th scope="col">Option</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr v-for="(item, index) in supplierRfqList" :key="index++">
-                                <td scope="row">{{ index }}</td>
-                                <td>{{ item.date }}</td>
-                                <td>{{ item.supplier }}</td>
-                                <td>{{ item.status }}</td>
-                                <td class="text-center"><router-link to="srfq/view/" class="nav-link">View RFQ</router-link></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        
-                    <button class="btn btn-primary" style="float: right;" type="submit">Add New Supplier RFQ</button>
-
+                <button class="btn btn-primary" style="float: right;" type="submit">Edit</button>
+                <button class="btn btn-primary mr-3" style="float: right;" type="button">Add New</button>
+                <button class="btn btn-info mr-3" style="float: right;" type="button">Generate</button>
+                
                 </div>
             </div>
         </div>

@@ -9,7 +9,8 @@
     </div>
 
     <div class="container-fluid" style="margin-bottom: 60px;">
-      <div class="row">
+      <div class="card">
+        <div class="card-body">
         <table class="table">
           <thead class="thead-dark">
             <tr>
@@ -19,7 +20,7 @@
               <th scope="col" class="text-center">Email</th>
               <th scope="col" class="text-center">Phone</th>
               <th scope="col" class="text-center">Permission</th>
-              <th scope="col" class="text-center">Status</th>
+              <!-- <th scope="col" class="text-center">Status</th> -->
             </tr>
           </thead>
           <tbody>
@@ -32,14 +33,14 @@
               <td class="text-center">{{ item.email }}</td>
               <td class="text-center">{{ item.phone }}</td>
               <td class="text-center">{{ item.role }}</td>
-              <td class="text-center">
+              <!-- <td class="text-center">
                 <span :class="'userStatus us' + item.status">Active</span>
-              </td>
+              </td> -->
             </tr>
           </tbody>
         </table>
-      </div>
-      <div class="row">
+
+      <div class="row" v-show="false">
         <nav aria-label="..." style="margin: auto;">
           <ul class="pagination">
             <li class="page-item disabled">
@@ -63,6 +64,10 @@
           </ul>
         </nav>
       </div>
+
+        </div>
+      </div>
+
     </div>
 
     <!--user View-->
@@ -111,7 +116,7 @@
           </div>
         </div>
         <div class="card-footer uvCardFooter text-center">
-          <router-link :to="'user/edit/' + selectedUser" @click="closeHistory()">Modify the user</router-link>
+          <router-link :to="'/setting/user/edit/' + selectedUser" @click="closeHistory()">Modify the user</router-link>
         </div>
       </div>
     </div>
