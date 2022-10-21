@@ -138,4 +138,12 @@ export default class GPApiService extends BaseApiService {
   updateCustomer(data) {
     return this.put(`api/customers/${data.id}`, data.data);
   }
+
+  getSupplier(id) {
+    return this.get(`/api/suppliers/${id}`);
+  }
+
+  updateSupplier(data) {
+    return this.put(`api/suppliers/${data.id}`, data.data);
+  }
 }

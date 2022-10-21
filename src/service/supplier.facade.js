@@ -20,4 +20,12 @@ export default class SuppliersFacade {
   deleteSupplier(id) {
     return this.GPAPI.deleteSupplier(id).then(res => res.data);
   }
+
+  getSupplier(id) {
+    return this.GPAPI.getSupplier(id).then(res => res.data);
+  }
+
+  updateSupplier(data) {
+    return this.GPAPI.updateSupplier(data).then(res => res.data);
+  }
 }

@@ -166,4 +166,14 @@ export default class GPOpsFactory {
     const CustomerFcd = new CustomerFacade();
     return CustomerFcd.updateCustomer(data);
   }
+
+  static getSupplier(id) {
+    const SupplierFcd = new SupplierFacade();
+    return SupplierFcd.getSupplier(id);
+  }
+
+  static updateSupplier(data) {
+    const SupplierFcd = new SupplierFacade();
+    return SupplierFcd.updateSupplier(data);
+  }
 }
